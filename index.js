@@ -24,6 +24,6 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
-http.listen(3000, function(){
+http.listen(process.env.PORT, function(){
   console.log('listening on *:3000');
 });
